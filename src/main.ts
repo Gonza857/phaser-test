@@ -1,14 +1,18 @@
 import Phaser from "phaser";
-import { GAME_CONFIG } from "../config";
-import { GameScene } from "../js/scenes/GameScene";
+import GameScene from "../js/scenes/GameScene";
+import HudScene from "../js/scenes/HudScene";
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  width: GAME_CONFIG.width,
-  height: GAME_CONFIG.height,
+  width: 1536,
+  height: 1408,
   backgroundColor: "#2d2d2d",
-  physics: { default: "arcade", arcade: { debug: false } },
-  scene: [GameScene]
+  pixelArt: true,
+  physics: {
+    default: "arcade",
+    arcade: { debug: false }
+  },
+  scene: [GameScene, HudScene] // solo arrancamos con el juego
 };
 
 new Phaser.Game(config);

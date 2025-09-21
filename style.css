@@ -1,0 +1,23 @@
+#hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 250px;
+    background: rgba(0,0,0,0.7);
+    padding: 10px;
+    border: 2px solid #fff;
+    font-family: 'Courier New', monospace;
+    font-size: 18px;
+    color: #fff;
+    z-index: 100; /* encima del canvas */
+}
+
+.hud-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.hud-item span:first-child {
+    color: #ffcc00;
+}

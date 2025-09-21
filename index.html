@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <title>Phaser + TS | Cámara + Mouse Move</title>
-  <style>
-    body {
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    canvas {
-      border: 4px solid #fff;
-    }
-  </style>
+    <meta charset="UTF-8"/>
+    <title>Phaser + TS | Cámara + Mouse Move</title>
+    <style>
+        body {
+            background: #111;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        canvas {
+            border: 4px solid #fff;
+        }
+    </style>
 </head>
 <body>
-  <script type="module" src="/src/main.ts"></script>
+
+<div id="hud">
+    <div class="hud-item">
+        <span>Energía:</span> <span id="energia">100</span>
+    </div>
+    <div class="hud-item">
+        <span>Coins:</span> <span id="coins">50</span>
+    </div>
+    <div class="hud-item">
+        <span>Felicidad:</span> <span id="felicidad">80</span>
+    </div>
+</div>
+
+
+<script type="module" src="/src/main.ts"></script>
 </body>
 </html>
